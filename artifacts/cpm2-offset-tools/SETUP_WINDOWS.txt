@@ -1,0 +1,22 @@
+WINDOWS QUICK START
+===================
+
+1. Install Python 3.10+ from python.org (check "Add to PATH")
+
+2. Open PowerShell in this folder:
+
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+
+3. CLI example:
+
+   python dump_offset_updater.py update --old-dump old.cs --new-dump new.cs --script script.lua --out updated.lua --report report.txt --rewrite-header
+
+4. Telegram bot:
+
+   $env:BOT_TOKEN = "YOUR_TOKEN_FROM_BOTFATHER"
+   $env:ALLOWED_IDS = "6067014733"
+   python telegram_offset_bot.py
+
+5. Big dumps: right-click dump.cs → Send to → Compressed folder → send the .zip to the bot

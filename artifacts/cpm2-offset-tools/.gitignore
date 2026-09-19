@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.zip
+*.cs
+*.lua
+!examples/
+.DS_Store
+offset_mapping_report.txt
+CPM2_UPDATED.lua
+diff_report.txt
+reoffset.txt

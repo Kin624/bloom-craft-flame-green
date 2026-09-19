@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "KINZI KGO",
+      "hasCanvas": false,
+      "bodyTextLen": 957,
+      "bodyTextHash": "8336259c7d3a4ea819ea29a3dc57850873f0b998eb5b8c99f12464c4deb9b726",
+      "bodyTextPrefix": "KGO · GAMEGUARDIAN SPACE KINZI KGO Offset lab for Car Parking Mu",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "KINZI KGO",
+      "hasCanvas": false,
+      "bodyTextLen": 944,
+      "bodyTextHash": "06c48a850019a81918ed8ed035639c4f4a82b69cf411d7e2ce81794ebc07525d",
+      "bodyTextPrefix": "KGO · GAMEGUARDIAN SPACE KINZI KGO Offset lab for Car Parking Mu",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

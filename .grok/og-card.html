@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>KINZI KGO</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #0b0d0c;
+  }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    background:
+      radial-gradient(ellipse 78% 68% at 50% 46%, #151a17 0%, #0b0d0c 70%);
+    font-family: "Liberation Mono", "DejaVu Sans Mono", "FreeMono", ui-monospace, monospace;
+    color: #d7e6d9;
+  }
+  .vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 90% 80% at 50% 50%, transparent 40%, rgba(11,13,12,0.55) 100%);
+  }
+  .bezel {
+    position: absolute;
+    inset: 26px 34px;
+    border: 1px solid rgba(183,201,176,0.42);
+    box-shadow:
+      inset 0 0 0 10px #0b0d0c,
+      inset 0 0 0 11px rgba(183,201,176,0.28),
+      0 0 48px rgba(183,201,176,0.07);
+  }
+  .inner {
+    position: absolute;
+    inset: 40px 48px;
+    border: 1px solid rgba(215,230,217,0.10);
+  }
+  .tick { position: absolute; background: #b7c9b0; }
+  .tick.h { width: 22px; height: 2px; }
+  .tick.v { width: 2px; height: 22px; }
+  .tlh { top: 18px; left: 26px; } .tlv { top: 18px; left: 26px; }
+  .trh { top: 18px; right: 26px; } .trv { top: 18px; right: 26px; }
+  .blh { bottom: 18px; left: 26px; } .blv { bottom: 18px; left: 26px; }
+  .brh { bottom: 18px; right: 26px; } .brv { bottom: 18px; right: 26px; }
+
+  .rail {
+    position: absolute;
+    top: 92px;
+    bottom: 92px;
+    width: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left { left: 54px; }
+  .right { right: 54px; }
+  .led {
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #b7c9b0;
+    box-shadow: 0 0 7px rgba(183,201,176,0.65);
+    opacity: 0.45;
+  }
+  .led.on {
+    opacity: 1;
+    background: #d7e6d9;
+    box-shadow: 0 0 11px rgba(215,230,217,0.95);
+  }
+
+  .grid {
+    position: absolute;
+    inset: 84px 120px 110px;
+    background-image:
+      linear-gradient(rgba(183,201,176,0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(183,201,176,0.055) 1px, transparent 1px);
+    background-size: 32px 32px;
+    -webkit-mask-image: radial-gradient(ellipse 68% 62% at 50% 48%, #000 18%, transparent 76%);
+    mask-image: radial-gradient(ellipse 68% 62% at 50% 48%, #000 18%, transparent 76%);
+  }
+
+  .lockup {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 88px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #d7e6d9;
+    text-shadow:
+      0 0 16px rgba(183,201,176,0.58),
+      0 0 40px rgba(183,201,176,0.22);
+    line-height: 1;
+    padding-left: 0.16em;
+  }
+  .rule {
+    width: 380px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #b7c9b0 20%, #d7e6d9 50%, #b7c9b0 80%, transparent);
+    opacity: 0.85;
+  }
+  h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    color: #b7c9b0;
+    text-shadow: 0 0 10px rgba(183,201,176,0.38);
+    padding-left: 0.32em;
+  }
+  .scan {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(11,13,12,0.10) 0 2px,
+      transparent 2px 4px
+    );
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="bezel"></div>
+    <div class="inner"></div>
+    <span class="tick h tlh"></span><span class="tick v tlv"></span>
+    <span class="tick h trh"></span><span class="tick v trv"></span>
+    <span class="tick h blh"></span><span class="tick v blv"></span>
+    <span class="tick h brh"></span><span class="tick v brv"></span>
+    <div class="rail left">
+      <i class="led"></i><i class="led on"></i><i class="led"></i>
+      <i class="led on"></i><i class="led"></i><i class="led"></i>
+      <i class="led on"></i><i class="led"></i>
+    </div>
+    <div class="rail right">
+      <i class="led"></i><i class="led"></i><i class="led on"></i>
+      <i class="led"></i><i class="led on"></i><i class="led"></i>
+      <i class="led"></i><i class="led on"></i>
+    </div>
+    <div class="grid"></div>
+    <div class="lockup">
+      <h1>KINZI KGO</h1>
+      <div class="rule"></div>
+      <h2>CPM2 1.3.3.6 OFFSET LAB</h2>
+    </div>
+    <div class="vignette"></div>
+    <div class="scan"></div>
+  </div>
+</body>
+</html>

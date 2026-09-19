@@ -1,0 +1,123 @@
+OFFSET MAPPING REPORT
+=====================
+Old dump → New dump
+
+0x358375  →  NO CLASS/METHOD IN OLD DUMP
+0x2BF5934  →  0x2DEEEB0  (ObscuredPrefs::SetFloat)
+0x2BF59CC  →  0x2DEEF48  (ObscuredPrefs::GetFloat)
+0x2DB9E90  →  0x2FFA878  (LapRaceCar::GetClearTime)
+0x2DB9EB0  →  0x2FFA898  (LapRaceCar::GetPenaltyTime)
+0x2DB9EBC  →  0x2FFA8A4  (LapRaceCar::GetTotalTime)
+0x2DBEE68  →  0x2FFF9A8  (LapRaceCar::GetTotalDistance)
+0x2DC1820  →  0x3002358  (LapRaceCar::AddPenaltyDistance)
+0x2DC1830  →  0x3002368  (LapRaceCar::AddPenaltyTime)
+0x2DC2244  →  0x3002E5C  (LapRaceCar::IsCheatFinish)
+0x2DC2470  →  0x3003088  (LapRaceCar::GetTotalProgress)
+0x2DC250C  →  0x3003124  (LapRaceCar::GetTotalClearDistance)
+0x2DC2550  →  0x3003168  (LapRaceCar::GetPenaltyDistance)
+0x2DC2560  →  0x3003178  (LapRaceCar::GetFinalDistance)
+0x2DC2594  →  0x30031AC  (LapRaceCar::OnLapFinish)
+0x2DC27C8  →  0x30033DC  (LapRaceCar::GetCurrentLapTime)
+0x2DC2810  →  0x3003424  (LapRaceCar::GetBestLap)
+0x2DC2818  →  0x300342C  (LapRaceCar::GetFinishTime)
+0x2DC28AC  →  0x30034C0  (LapRaceCar::GetLastFinishTime)
+0x2DC28F4  →  0x3003508  (LapRaceCar::GetCrashPenaltySecs)
+0x2DC29DC  →  0x30035F0  (LapRaceCar::IsFinalLap)
+0x2DC2BB4  →  0x30037C8  (LapRaceCar::GetBestLapTime)
+0x2DC2D84  →  0x3003998  (LapRaceCar::CalculatePos)
+0x2E25F1C  →  0x3069CC0  (PlayersListControl::GetOwnRank)
+0x2E58208  →  0x309EE0C  (MultiPlayer::UnlockCar)
+0x2E5DF44  →  0x30A51C0  (MultiPlayer::KickedFromCar)
+0x2E7CDE8  →  0x30C5730  (MultiPlayerMenu::hasHouse)
+0x2EBACEC  →  0x31043D8  (CarOutInControl::CheckCarForEnterPassenger)
+0x2ED8F40  →  0x3124924  (PlayerDatas::IsBought)
+0x2ED9220  →  0x3124C04  (PlayerDatas::IgnoreCollisionWithOtherCars)
+0x2EF8658  →  0x3158ADC  (CircuitCarStearing::ChangeSteeringState)
+0x2F039A8  →  0x3165F18  (CircuitRaceControlller::CheckParent)
+0x2F4D8C4  →  0x319D114  (LemanRaceController::SetTime)
+0x2F89930  →  0x31DC7BC  (CurrencyManagerController::SetMoneyPrefs)
+0x2F899CC  →  0x31DC858  (CurrencyManagerController::SetMoney)
+0x2F89C60  →  0x31DCAEC  (CurrencyManagerController::SetCoins)
+0x2F89C68  →  0x31DCAF4  (CurrencyManagerController::AddMoney)
+0x2F89EFC  →  0x31DCD88  (CurrencyManagerController::IsEnoughCoins)
+0x2F89FB4  →  0x31DCE40  (CurrencyManagerController::IsEnoughMoney)
+0x2F8A06C  →  0x31DCEF8  (CurrencyManagerController::IsMoneyEnough)
+0x3007978  →  0x32774E8  (Order::GetDistance)
+0x3007980  →  0x32774F0  (Order::GetPrice)
+0x30A0838  →  0x32F6FE4  (Utils::GetClassVehicle)
+0x30A19DC  →  NOT FOUND IN NEW DUMP  (Utils::EncryptEngine)
+0x30A19EC  →  NOT FOUND IN NEW DUMP  (Utils::DecryptEngine)
+0x30A8E28  →  0x39AE43C  (Wheel::get_TyreHealth)
+0x3102558  →  NOT FOUND IN NEW DUMP  (AllCarsInfo::CheckerNFSCars)
+0x31026B0  →  0x337395C  (AllCarsInfo::IsBannedCar)
+0x3102738  →  0x33739E4  (AllCarsInfo::CheckTradeCarNotAllowed)
+0x3102800  →  0x33739E4  (AllCarsInfo::CheckTradeCarNotAllowed)
+0x313BAA0  →  0x3398A58  (CarInfoExtensions::GetBodyKitPaidStatus)
+0x31F19FC  →  NO CLASS/METHOD IN OLD DUMP
+0x320A1EC  →  NO CLASS/METHOD IN OLD DUMP
+0x3299074  →  0x3553538  (RallyCar::get_Penalty)
+0x329907C  →  0x3553540  (RallyCar::get_MissedCheckpoints)
+0x32996C8  →  0x3553B8C  (RallyCar::AddPenalty)
+0x329A0F8  →  0x35545B4  (RallyCar::IsCarOffRoad)
+0x329B00C  →  0x3555898  (RallyCar::ApplyMissedCheckpointsPenalty)
+0x32E4238  →  0x35D4640  (EventRestrictionService::IsVehicleAllowed)
+0x330DE48  →  0x3605C3C  (PartDataExtensions::CheckNotCompatibleFull)
+0x33197A8  →  0x3603ED4  (PartDataExtensions::CheckNotCompatibleEngine)
+0x331C938  →  0x360E718  (EngineTuningTimerService::get_CurrentUnixTimeSeconds)
+0x332E140  →  NO CLASS/METHOD IN OLD DUMP
+0x332EE58  →  0x361DBE8  (AllPricesConfigConst::get_BodyKitsMoneyPrice)
+0x333A8F8  →  NO CLASS/METHOD IN OLD DUMP
+0x334C90C  →  NOT FOUND IN NEW DUMP  (DriverController::CreatPlayerPerson)
+0x3351138  →  0x368E040  (DriverController::Update)
+0x33541F0  →  NO CLASS/METHOD IN OLD DUMP
+0x3377764  →  0x3649BB4  (UtilsVehicles::IsBlackVehicle)
+0x337ECC4  →  0x3653B30  (RegistrationController::PlayerNameChanged)
+0x339E740  →  0x367387C  (PlayerStorageService::IsCaliperBought)
+0x339E990  →  0x3673C2C  (PlayerStorageService::IsBrakeBought)
+0x339EA88  →  0x3673D24  (PlayerStorageService::CheckPaintBought)
+0x33A46A8  →  0x3679A48  (CharactersSuitInventory::IsBought)
+0x33A5348  →  0x367ADC4  (SlotCollection::get_IsGarageBought)
+0x33A7618  →  0x367D090  (SlotCollection::SaveSlots)
+0x33B0800  →  NO CLASS/METHOD IN OLD DUMP
+0x3429CDC  →  0x3726688  (AirSuspensionSystem::IsBought)
+0x3429D04  →  0x37266B0  (AirSuspensionSystem::GetPrice)
+0x342E048  →  0x372A524  (BodyKitsService::GetCoinPriceForKit)
+0x34ADB28  →  0x37B7F80  (LockCarButtonController::LockCar)
+0x34BD36C  →  0x37C6634  (FlagsVisualScope::IsFlagUnlocked)
+0x34C399C  →  NO CLASS/METHOD IN OLD DUMP
+0x34D7EC0  →  0x37E3B7C  (PoliceSystem::IsBought)
+0x3540618  →  0x3854158  (VehicleEntityProvider::CheckerEngineCheating)
+0x35414D4  →  0x3854FC4  (VehicleEntityProvider::ApplySuspensionValueAsync)
+0x3569F64  →  NO CLASS/METHOD IN OLD DUMP
+0x356DF94  →  0x37AD8C0  (CarInputManager::SetDriftMode)
+0x35738D0  →  NO CLASS/METHOD IN OLD DUMP
+0x35750BC  →  NO CLASS/METHOD IN OLD DUMP
+0x3583754  →  0x3884C1C  (MarketInventoryWindow::CheckGearboxNotCompatible)
+0x3660024  →  NO CLASS/METHOD IN OLD DUMP
+0x366BF34  →  0x3945444  (ConnectionHandler::get_CheckHashLimitExceeded)
+0x366BF44  →  0x3945454  (ConnectionHandler::get_CorrectHash)
+0x367B478  →  NO CLASS/METHOD IN OLD DUMP
+0x3A0002C  →  NO CLASS/METHOD IN OLD DUMP
+0x3A00BC8  →  NO CLASS/METHOD IN OLD DUMP
+0x3A79F7C  →  NO CLASS/METHOD IN OLD DUMP
+0x3A79F8C  →  NO CLASS/METHOD IN OLD DUMP
+0x3A7A884  →  NO CLASS/METHOD IN OLD DUMP
+0x3A7A8B0  →  NO CLASS/METHOD IN OLD DUMP
+0x3A826A8  →  NO CLASS/METHOD IN OLD DUMP
+0x3A82970  →  NO CLASS/METHOD IN OLD DUMP
+0x3A829C4  →  NO CLASS/METHOD IN OLD DUMP
+0x3A8301C  →  NO CLASS/METHOD IN OLD DUMP
+0x3BB64DC  →  NO CLASS/METHOD IN OLD DUMP
+0x3BB64E4  →  NO CLASS/METHOD IN OLD DUMP
+0x3BB64EC  →  NO CLASS/METHOD IN OLD DUMP
+0x3BB64F8  →  NO CLASS/METHOD IN OLD DUMP
+0x3BB6500  →  NO CLASS/METHOD IN OLD DUMP
+0x3E5B258  →  NO CLASS/METHOD IN OLD DUMP
+0x3FF290C  →  NO CLASS/METHOD IN OLD DUMP
+0x3FF422C  →  NO CLASS/METHOD IN OLD DUMP
+0x3FF42D0  →  NO CLASS/METHOD IN OLD DUMP
+0x3FF46AC  →  NO CLASS/METHOD IN OLD DUMP
+0x6291BC8  →  0x675225C  (PlayerPrefs::SetString)
+0x2A1F03E0  →  NO CLASS/METHOD IN OLD DUMP
+0x52800000  →  NO CLASS/METHOD IN OLD DUMP
+0x52800028  →  NO CLASS/METHOD IN OLD DUMP
